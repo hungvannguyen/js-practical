@@ -59,7 +59,7 @@
         dateTime: cart.dateTime,
         shopWallet: cart.shopWallet
       });
-      alert('Purchase successful! User: ' + cart.userName + ', has bought: ' + cart.amount + ', at: ' + new Date(cart.dateTime).toLocaleString() + ', and send to shop Wallet: ' + cart.shopWallet);
+      alert('Purchase successful! User: ' + user.name + ', has bought: ' + cart.amount + ', at: ' + new Date(cart.dateTime).toLocaleString() + ', and send to shop Wallet: ' + cart.shopWallet);
     }
 
     function showTransactionHistory() {
