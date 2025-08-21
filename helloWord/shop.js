@@ -54,7 +54,7 @@
       userRender();
 
       transactionHistoryList.push({
-        userName: cart.userName,
+        userName: user.name,
         amount: cart.amount,
         dateTime: cart.dateTime,
         shopWallet: cart.shopWallet
