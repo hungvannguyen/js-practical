@@ -1,13 +1,13 @@
-  let name = 'Hung';
-  let count = 0;
+let name = 'Hung';
+let count = 0;
+let userName = document.getElementById('userName');
 
-  const hello = (function helloWorld() {
-      return 'hello, ' + name;
-  })();
+function hello() {
+  return 'hello, ' + (userName && userName.value ? userName.value : name);
+}
 
-      document.getElementById('greeting').innerText = hello;
-      console.log(hello);
+document.getElementById('greeting').innerText = hello();
 
-      document.getElementById('hello').addEventListener('click', function() {
-          document.getElementById('greeting').innerText = hello + ' ' + count++;
-      });
+document.getElementById('showGreeting').addEventListener('click', function () {
+  document.getElementById('greeting').innerText = hello();
+});
