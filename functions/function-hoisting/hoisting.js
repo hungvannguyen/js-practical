@@ -8,13 +8,6 @@ console.log(a);
 
 a = 10;
 
-
-// Hoisting example with error
-
-console.log(b);
-
-let b = 20;
-
 // Hoisting example with Function Declaration
 
 helloWorld();
@@ -25,8 +18,6 @@ function helloWorld(){
 
 // Hoisting with Function Expression
 
-helloWorld();
-
-let helloWorld = function(){
+let hello = function(){
     console.log('Hello, World!');
 }
