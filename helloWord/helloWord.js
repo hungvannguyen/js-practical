@@ -11,11 +11,9 @@
     }
 
     document.getElementById('showGreeting').addEventListener('click', () => {
-      hello();
       transactionHistory.push(hello());
       document.getElementById('greeting').innerText = hello();
       document.getElementById('transHistory').innerHTML = transactionHistory.join('<br>');
     });
-
   }
 )();
