@@ -4,5 +4,9 @@
       return 'hello, ' + name;
   })();
 
-      document.getElementById('greeting').innerText = hello;
+      document.getElementById('default').innerText = hello;
       console.log(hello);
+
+      document.getElementById('hello').addEventListener('click', function() {
+          document.getElementById('greeting').innerText = hello;
+      });
